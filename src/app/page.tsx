@@ -1,7 +1,5 @@
-import About from "@/components/About";
 import MainHeader from "@/components/MainHeader";
 import Resume from "@/components/Resume";
-import Image from "next/image";
 
 export default function Home() {
   return (
