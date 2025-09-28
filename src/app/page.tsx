@@ -1,3 +1,4 @@
+"use client";
 import MainHeader from "@/components/MainHeader";
 import Resume from "@/components/Resume";
 
