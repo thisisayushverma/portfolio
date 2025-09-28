@@ -11,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="p-2 min-h-screen flex flex-col items-center bg-[#09090b]">
+      <body className="p-2 w-full min-h-screen flex flex-col items-center bg-[#09090b]">
         <Navbar/>
         {children}
         <Footer/>
