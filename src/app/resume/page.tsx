@@ -15,7 +15,10 @@ export default function Resume() {
           </h1>
 
           <div className="w-full h-screen p-1 flex">
-            <iframe src={config.resumeUrl} className="w-full h-full rounded-lg shadow " />
+            <iframe
+              src={config.resumeUrl}
+              className="w-full h-full rounded-lg shadow "
+            />
           </div>
         </div>
       </div>
