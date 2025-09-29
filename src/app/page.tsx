@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import MainHeader from "@/components/MainHeader";
 import ProjectComp from "@/components/ProjectComp";
 import Resume from "@/components/Resume";
+import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
         <Experience/>
         <BreakDiv/>
         <ProjectComp/>
+        <BreakDiv/>
+        <TechStack/>
       </div>
     </>
   );

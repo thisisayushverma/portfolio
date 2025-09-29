@@ -79,18 +79,18 @@ const projectList = [
             "Integrated STUN/TURN servers to ensure reliable connectivity across diverse network conditions."
         ],
         keywords: [
-            "Nodejs", "Socket.io", "Webrtc", "SFU", "HLS","Reactjs", "Tailwindcss","EC2"
+            "Nodejs", "Socket.io", "Webrtc", "SFU", "HLS", "Reactjs", "Tailwindcss", "EC2"
         ],
-        links:{
-            github:"https://github.com/thisisayushverma/mediasoup-meeting-app",
-            live:"https://onmeet.ayushverma.dev/"
+        links: {
+            github: "https://github.com/thisisayushverma/mediasoup-meeting-app",
+            live: "https://onmeet.ayushverma.dev/"
         }
     },
     {
-        id:2,
-        name:"Musify",
-        duration:"April-2025 - Present",
-        description:[
+        id: 2,
+        name: "Musify",
+        duration: "April-2025 - Present",
+        description: [
             " Designed and developed a full-stack music streaming platform enabling users to upload, stream, and manage audio files.",
             " Implemented adaptive bitrate streaming with FFmpeg to optimize playback quality across varying network conditions.",
             "Built RESTful APIs with Node.js and Express.js for authentication, file uploads, and user interactions, secured with email OTP verification.",
@@ -99,18 +99,56 @@ const projectList = [
             "Utilized MongoDB for managing user accounts, playlists, and engagement data with efficient queries.",
             "Applied background processing with queues (Bull/SQS) for seamless audio conversion and file handling."
         ],
-        keywords:["Nodejs", "Expressjs", "MongoDB","AWS S3", "AWS CloudFront", "FFmpeg","HLS" , "AWS SQS", "Bull Queue", "Tailwindcss", "Reactjs", "Nodemailer", "JWT Token", "Redux",],
-        links:{
-            github:"https://github.com/thisisayushverma/musify-app",
-            live:"https://musify.ayushverma.dev/"
+        keywords: ["Nodejs", "Expressjs", "MongoDB", "AWS S3", "AWS CloudFront", "FFmpeg", "HLS", "AWS SQS", "Bull Queue", "Tailwindcss", "Reactjs", "Nodemailer", "JWT Token", "Redux",],
+        links: {
+            github: "https://github.com/thisisayushverma/musify-app",
+            live: "https://musify.ayushverma.dev/"
         }
     }
 ]
 
+const techStack = [
+    // Frontend
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", link: "https://react.dev/" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", link: "https://nextjs.org/" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", link: "https://www.typescriptlang.org/" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    { icon: "https://seeklogo.com/images/T/tailwind-css-logo-9CA5019C97-seeklogo.com.png", link: "https://tailwindcss.com/" },
+  
+    // Backend
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", link: "https://nodejs.org/" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", link: "https://expressjs.com/" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg", link: "https://www.php.net/" },
+  
+    // Database
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", link: "https://www.mongodb.com/" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", link: "https://www.mysql.com/" },
+  
+    // Mobile
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg", link: "https://kotlinlang.org/" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg", link: "https://developer.android.com/studio" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xml/xml-original.svg", link: "https://developer.mozilla.org/en-US/docs/Web/XML" },
+  
+    // Cloud & Tools
+    { icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg", link: "https://aws.amazon.com/s3/" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", link: "https://github.com/" },
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", link: "https://www.postman.com/" },
+    { icon: "https://upload.wikimedia.org/wikipedia/commons/5/5f/FFmpeg_Logo_new.svg", link: "https://ffmpeg.org/" },
+  
+    // Other
+    { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg", link: "https://socket.io/" }
+  ];
+  
+
+
+
 export {
     socialUrl,
     expList,
-    projectList
+    projectList,
+    techStack
 }
 
 export default config

@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 
   images: {
-    domains: ["www.cgwb.gov.in"], 
+    domains: ["www.cgwb.gov.in", "cdn.jsdelivr.net",
+      "upload.wikimedia.org","seeklogo.com"],
     remotePatterns: [
       {
         protocol: "https",
