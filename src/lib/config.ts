@@ -70,7 +70,7 @@ const projectList = [
     {
         id: 1,
         name: "Onmeet",
-        duration: "Aug-2025 - Sep-2025",
+        duration: "Aug-2025 - Present",
         description: [
             "Built a real-time meeting app where users can create rooms and independently enable/disable camera, microphone, and screen sharing.",
             "Implemented SFU (Selective Forwarding Unit) architecture to optimize multi-user video calls and avoid peer-to-peer mesh overhead.",
@@ -83,7 +83,26 @@ const projectList = [
         ],
         links:{
             github:"https://github.com/thisisayushverma/mediasoup-meeting-app",
-            live:"https://onmeet.vercel.app/"
+            live:"https://onmeet.ayushverma.dev/"
+        }
+    },
+    {
+        id:2,
+        name:"Musify",
+        duration:"April-2025 - Present",
+        description:[
+            " Designed and developed a full-stack music streaming platform enabling users to upload, stream, and manage audio files.",
+            " Implemented adaptive bitrate streaming with FFmpeg to optimize playback quality across varying network conditions.",
+            "Built RESTful APIs with Node.js and Express.js for authentication, file uploads, and user interactions, secured with email OTP verification.",
+            "Improved content discoverability in Musify by implementing fuzzy search, handling typos and partial matches to deliver accurate results.",
+            "Integrated AWS S3 for scalable storage and AWS CloudFront for fast, global content delivery, restricted access,ensuring audio files are securely delivered only through the platform.",
+            "Utilized MongoDB for managing user accounts, playlists, and engagement data with efficient queries.",
+            "Applied background processing with queues (Bull/SQS) for seamless audio conversion and file handling."
+        ],
+        keywords:["Nodejs", "Expressjs", "MongoDB","AWS S3", "AWS CloudFront", "FFmpeg","HLS" , "AWS SQS", "Bull Queue", "Tailwindcss", "Reactjs", "Nodemailer", "JWT Token", "Redux",],
+        links:{
+            github:"https://github.com/thisisayushverma/musify-app",
+            live:"https://musify.ayushverma.dev/"
         }
     }
 ]
