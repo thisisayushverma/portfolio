@@ -1,9 +1,9 @@
 import React from 'react'
 import { techStack } from '@/lib/config'
 import IconCard from './IconCard'
-type Props = {}
 
-function TechStack({}: Props) {
+
+function TechStack() {
   return (
     <div className="w-full flex justify-center border-b-[1px]  border-[#29292b] ">
     <div className="w-full max-w-[800px] flex flex-col border-r-[1px] border-l-[1px]  border-[#29292b] ">

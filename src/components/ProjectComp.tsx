@@ -15,7 +15,7 @@ function ProjectComp() {
             projectList.map((project) => {
               console.log(project);
               const {id,...rest} = project
-              return <ProjectCard key={project.id} prop={rest} />
+              return <ProjectCard key={id} prop={rest} />
             })
           }
         </div>
