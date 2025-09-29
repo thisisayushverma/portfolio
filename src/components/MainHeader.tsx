@@ -4,7 +4,7 @@ import About from "./About";
 
 function MainHeader() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center  border-b-[1px]  border-[#29292b]">
       <div className="w-[800px] p-5 pb-0 border-r-[1px] border-l-[1px] border-[#29292b] flex flex-col gap-5">
         <h1 className="font-libertinus text-5xl text-white">AV</h1>
         <div>

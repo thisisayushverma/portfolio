@@ -18,7 +18,7 @@ function Resume() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center   border-t-[1px]  border-[#29292b] ">
+    <div className="w-full flex flex-col items-center justify-center   border-b-[1px]  border-[#29292b] ">
       <div className="w-full max-w-[800px] flex  flex-col gap-3 p-3 font-medium border-r-[1px] border-l-[1px] border-[#29292b]">
         <div className="w-full flex gap-3">
           <div
