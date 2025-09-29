@@ -1,11 +1,20 @@
+
 import React from "react";
 import { useState } from "react";
+import GithubIcon from "../../public/git.svg"
+import LiveIcon from "../../public/live.svg"
+import Image from "next/image";
+import Link from "next/link";
 
 export type IProjectCard = {
   name: string | "Unknown";
   duration: string | "Unknown";
   description: string[];
   keywords: string[];
+  links: {
+    github: string;
+    live: string;
+  };
 };
 
 function ProjectCard(props: { prop: IProjectCard }) {
@@ -29,8 +38,22 @@ function ProjectCard(props: { prop: IProjectCard }) {
             <h1>{props.prop.duration}</h1>
           </div>
         </div>
-        <div className="flex gap-1 items-center justify-center">
-          <button onClick={handleClick} className="text-[#585858] relative ">
+        <div className="flex gap-2 items-center justify-center">
+          {
+            props.prop.links.live && (
+              <Link href={props.prop.links.live}>
+                <Image src={LiveIcon} alt="" className="h-5 w-5"/>
+              </Link>
+            )
+          }
+          {
+            props.prop.links.github && (
+              <Link href={props.prop.links.github}>
+                <Image src={GithubIcon} alt="" className="h-5 w-5"/>
+              </Link>
+            )
+          }
+          <button  className="text-[#585858] relative ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -70,16 +93,16 @@ function ProjectCard(props: { prop: IProjectCard }) {
         </div>
       </div>
       <div
-        className={`w-full flex flex-col gap-2  overflow-hidden transition-all duration-1000 ease-in-out ${
-          show ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        className={`w-full flex flex-col gap-2 pl-[60px] pr-4 overflow-hidden transition-all duration-1000 ease-in-out ${
+          show ? "max-h-[1200px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <ul className="list-disc pl-6 marker:text-[#585858] marker:text-sm ">
+        <ul className="list-disc pl-6 marker:text-[#585858] marker:text-sm mt-3">
           {props.prop.description.map((desc, index) => (
             <li key={index}>{desc}</li>
           ))}
         </ul>
-        <div className="w-full h-fit flex gap-2 my-1 flex-wrap">
+        <div className="w-full h-fit flex gap-2 my-1 mb-5  flex-wrap">
           {props.prop.keywords.map((item, index) => (
             <span
               className="text-[#7c7b7b] text-sm border  px-1 rounded-sm"

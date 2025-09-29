@@ -13,30 +13,27 @@ export type IRole = {
 type Props = {
   prop: IRole;
   last: boolean;
-}
+};
 
 function RoleCard(props: Props) {
   const [show, setShow] = useState(false);
   console.log(props);
-  
+
   const handleClick = () => {
     setShow((prev) => !prev);
   };
-
 
   return (
     <div className="w-full flex gap-1 items-stretch mt-2">
       {/* left column */}
       <div className="min-h-full flex flex-col items-center px-2 ">
-        <div className="flex size-6 shrink-0 items-center justify-center rounded-lg bg-muted text-muted-foreground border border-muted-foreground/15 ring-1 ring-edge ring-offset-1 
+        <div
+          className="flex size-6 shrink-0 items-center justify-center rounded-lg bg-muted text-muted-foreground border border-muted-foreground/15 ring-1 ring-edge ring-offset-1 
         ring-[#29292b]
         bg-[#27272a]
-        ring-offset-background text-[#585858]">
-          <Image
-            src={props.prop.icon}
-            alt=""
-            className="h-4 w-4 object-fit"
-          />
+        ring-offset-background text-[#585858]"
+        >
+          <Image src={props.prop.icon} alt="" className="h-4 w-4 object-fit" />
         </div>
         <div
           className={`flex-1 h-full ${
@@ -47,15 +44,15 @@ function RoleCard(props: Props) {
 
       {/* right column */}
       <div className="w-full px-2 flex flex-col">
-        <div className="flex justify-between">
+        <div className="flex justify-between" onClick={handleClick}>
           <div>
             <h1 className="font-bold">{props.prop.role}</h1>
             <div className="flex gap-2 text-[#585858] text-sm">
               <h1>{props.prop.job_type}</h1> |<h1>{props.prop.duration}</h1>
             </div>
           </div>
-          <div>
-            <button onClick={handleClick} className="text-[#585858] relative">
+          <div className="flex gap-1 items-center justify-center">
+            <button  className="text-[#585858] relative ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -66,7 +63,7 @@ function RoleCard(props: Props) {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className={`h-4 w-4  absolute top-0 left-0 inset-0 transition-all duration-1000 ease-in-out ${
+                className={` h-4 w-4   transition-all duration-1000 ease-in-out ${
                   show ? "opacity-0" : "opacity-100"
                 }`}
               >
@@ -97,7 +94,7 @@ function RoleCard(props: Props) {
 
         <div
           className={`w-full my-2 overflow-hidden transition-all duration-1000 ease-in-out ${
-            show ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            show ? "max-h-[1200px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <ul className="list-disc pl-6 marker:text-[#585858] marker:text-sm ">

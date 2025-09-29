@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { projectList } from "@/lib/config";
 
 function ProjectComp() {
 
@@ -10,7 +11,13 @@ function ProjectComp() {
         <h1 className=" p-1 px-4 font-roboto font-bold text-3xl border-b-[1px] border-[#29292b]">Project</h1>
 
         <div className="w-full">
-            <ProjectCard prop={{name:"Unknown",duration:"Unknown",description:[],keywords:[]}}/>
+          {
+            projectList.map((project) => {
+              console.log(project);
+              const {id,...rest} = project
+              return <ProjectCard key={project.id} prop={rest} />
+            })
+          }
         </div>
       </div>
     </div>

@@ -58,7 +58,7 @@ const expList = [
                     "Integrated data visualization tool into the Central Ground Water Board’s analytics system, empowering stakeholders with real-time insights into groundwater isotope data, pattern identification, and optimizing work efficiency by 70%.",
                 ],
                 keywords: [
-                    "HTML", "JavaScript", "CSS", "Bootstrap 5", "Google Maps API", "LeafletJs", " PlotlyJs libraries"
+                    "PHP", "SQL", "JavaScript", "HTML", "CSS", "Bootstrap 5", "Google Maps API", "LeafletJs", " PlotlyJs"
                 ]
             }
         ]
@@ -66,11 +66,32 @@ const expList = [
 ]
 
 //  project
-
+const projectList = [
+    {
+        id: 1,
+        name: "Onmeet",
+        duration: "Aug-2025 - Sep-2025",
+        description: [
+            "Built a real-time meeting app where users can create rooms and independently enable/disable camera, microphone, and screen sharing.",
+            "Implemented SFU (Selective Forwarding Unit) architecture to optimize multi-user video calls and avoid peer-to-peer mesh overhead.",
+            "Used Socket.IO for signaling to manage session setup, ICE candidate exchange, and peer connections.",
+            "Added HLSstreaming support to allow users to broadcast meetings live for non-participants.",
+            "Integrated STUN/TURN servers to ensure reliable connectivity across diverse network conditions."
+        ],
+        keywords: [
+            "Nodejs", "Socket.io", "Webrtc", "SFU", "HLS","Reactjs", "Tailwindcss","EC2"
+        ],
+        links:{
+            github:"https://github.com/thisisayushverma/mediasoup-meeting-app",
+            live:"https://onmeet.vercel.app/"
+        }
+    }
+]
 
 export {
     socialUrl,
-    expList
+    expList,
+    projectList
 }
 
 export default config
