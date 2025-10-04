@@ -1,7 +1,7 @@
 import { socialUrl } from "@/lib/config";
 import Link from "next/link";
 import React from "react";
-import Quote from "./Quote";
+
 
 function Footer() {
   return (
@@ -19,7 +19,6 @@ function Footer() {
             GitHub</Link>.
           </h1>
         </div>
-        {/* <Quote/> */}
       </div>
     </div>
   );
