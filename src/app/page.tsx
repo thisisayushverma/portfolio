@@ -20,6 +20,7 @@ export default function Home() {
         <ProjectComp/>
         <BreakDiv/>
         <TechStack/>
+        <BreakDiv/>
       </div>
     </>
   );

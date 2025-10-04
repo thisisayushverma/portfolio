@@ -17,7 +17,6 @@ type Props = {
 
 function RoleCard(props: Props) {
   const [show, setShow] = useState(false);
-  console.log(props);
 
   const handleClick = () => {
     setShow((prev) => !prev);

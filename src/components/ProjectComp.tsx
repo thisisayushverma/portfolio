@@ -13,7 +13,6 @@ function ProjectComp() {
         <div className="w-full">
           {
             projectList.map((project) => {
-              console.log(project);
               const {id,...rest} = project
               return <ProjectCard key={id} prop={rest} />
             })

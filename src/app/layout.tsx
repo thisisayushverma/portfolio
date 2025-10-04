@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreakDiv from "@/components/BreakDiv";
 
 export default function RootLayout({
   children,
@@ -16,10 +17,11 @@ export default function RootLayout({
           Ayush Verma - Full Stack Developer
         </title>
       </head>
-      <body className="p-2 min-h-screen flex flex-col items-center bg-[#09090b]">
+      <body className="p-2 min-h-screen flex flex-col items-center bg-[#09090b] relative">
         <Navbar/>
         {children}
         <Footer/>
+        <BreakDiv/>
       </body>
     </html>
   );

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 function SocialCard(props: {text: string,iconUrl: string,link:string}) {
-    console.log(props);
     
   return (
     <div>
